@@ -123,7 +123,7 @@ bing_site_verification: 628AA5546E0A17F49ADE3495873BAC24 # out your bing-site-ve
 # -----------------------------------------------------------------------------
 
 blog_name: Posts # blog_name will be displayed in your blog page
-blog_nav_title: What I'm thinking, reading, and doing. # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: Posts # your blog must have a title for it to be displayed in the nav bar
 blog_description: Posts
 permalink: /blog/:year/:title/
 
