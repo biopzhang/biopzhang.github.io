@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - biopzhang
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - Cheung-group/CDNNLSQ
+  - GuangyuWangLab2021/cellDancer
