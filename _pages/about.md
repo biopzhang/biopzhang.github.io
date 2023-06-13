@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About
-permalink: /about/
+permalink: /
 subtitle: <a href="https://www.researchgate.net/profile/Pengzhi-Zhang-2">Researcher</a>. 
 
 profile:
