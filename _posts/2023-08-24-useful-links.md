@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Useful links 
+title:  Useful links on bioinformatics
 date:   2023-08-24 16:40:16
 description: A collection of links
-tags: knowledge
+tags: knowledge, links
 categories: resources
 ---
 #### Plotting
