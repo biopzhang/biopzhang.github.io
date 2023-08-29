@@ -16,7 +16,9 @@ categories: resources
 
 #### Dimension reduction
 <ul>
+    <li><a href="    https://ordination.okstate.edu/PCA.htm">PCA</a></li>
     <li><a href="https://pair-code.github.io/understanding-umap">UMAP</a></li>
+
 </ul>
 
 
