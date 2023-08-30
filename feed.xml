@@ -1,43 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://biopzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://biopzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-30T03:24:30+00:00</updated><id>https://biopzhang.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://biopzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://biopzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-30T03:26:04+00:00</updated><id>https://biopzhang.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Bookmarks</title><link href="https://biopzhang.github.io/blog/2023/bookmarks/" rel="alternate" type="text/html" title="Bookmarks" /><published>2023-08-29T21:48:00+00:00</published><updated>2023-08-29T21:48:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/bookmarks</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/bookmarks/"><![CDATA[<h3 id="programming">Programming</h3>
-<p><a href="https://cvw.cac.cornell.edu/topics">Cornell HPC workshops</a>
-<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">Python Extension Packages for Windows</a>
-<a href="http://www.geeksforgeeks.org/object-oriented-programming-in-python-set-1-class-and-its-members/">Object Oriented Programming in Python</a>
-<a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Python Decorators</a>
-<a href="https://regex101.com/">Online regex tester and debugger</a>
-<a href="http://xmlprettyprint.com/">XML Pretty Print</a>
-<a href="http://sed.sourceforge.net/sed1line.txt">Sed1line</a>
-<a href="http://www.sqlcourse2.com/select2.html">SQL SELECT Statement</a></p>
+
+<p><a href="https://cvw.cac.cornell.edu/topics">Cornell HPC workshops</a></p>
+
+<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">Python Extension Packages for Windows</a></p>
+
+<p><a href="http://www.geeksforgeeks.org/object-oriented-programming-in-python-set-1-class-and-its-members/">Object Oriented Programming in Python</a></p>
+
+<p><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Python Decorators</a></p>
+
+<p><a href="https://regex101.com/">Online regex tester and debugger</a></p>
+
+<p><a href="http://xmlprettyprint.com/">XML Pretty Print</a></p>
+
+<p><a href="http://sed.sourceforge.net/sed1line.txt">Sed1line</a></p>
+
+<p><a href="http://www.sqlcourse2.com/select2.html">SQL SELECT Statement</a></p>
 
 <h3 id="deep-learning">Deep learning</h3>
-<p><a href="http://www.deeplearningbook.org/">Deep Learning</a>
-<a href="https://github.com/ritchieng/deep-learning-wizard">Open source guides/codes for mastering deep learning to deploying deep learning</a>
-<a href="https://wandb.ai/sauravmaheshkar/LSTM-PyTorch/reports/Using-LSTM-in-PyTorch-A-Tutorial-With-Examples--VmlldzoxMDA2NTA5">Using LSTM in PyTorch: A Tutorial With Examples – Weights &amp; Biases</a>
-<a href="http://deeplearning.net/software/theano/tutorial/python-memory-management.html">Python Memory Management — Theano</a></p>
+
+<p><a href="http://www.deeplearningbook.org/">Deep Learning</a></p>
+
+<p><a href="https://github.com/ritchieng/deep-learning-wizard">Open source guides/codes for mastering deep learning to deploying deep learning</a></p>
+
+<p><a href="https://wandb.ai/sauravmaheshkar/LSTM-PyTorch/reports/Using-LSTM-in-PyTorch-A-Tutorial-With-Examples--VmlldzoxMDA2NTA5">Using LSTM in PyTorch: A Tutorial With Examples – Weights &amp; Biases</a></p>
+
+<p><a href="http://deeplearning.net/software/theano/tutorial/python-memory-management.html">Python Memory Management — Theano</a></p>
 
 <h3 id="fun">Fun</h3>
-<p><a href="https://ccsb.scripps.edu/gallery/mycoplasma_model/">3D Whole Cell Model of a Mycoplasma Bacterium</a>
-<a href="http://nsmn1.uh.edu/dgraur/">Dan Graur’s site</a>
-<a href="http://backreaction.blogspot.com/2014/11/the-underappreciated-value-of-boring.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Backreaction+%28Backreaction%29">Backreaction</a>
-<a href="http://www.dailycognition.com/index.php/2009/07/09/25-acts-of-body-language-to-avoid.html">Body Language</a>
-<a href="http://sc.zdic.net/weijin/0603/18/00373cbe01fcbc46ad854ee69fe35c0f.html">汉典诗词</a></p>
+
+<p><a href="https://ccsb.scripps.edu/gallery/mycoplasma_model/">3D Whole Cell Model of a Mycoplasma Bacterium</a></p>
+
+<p><a href="http://nsmn1.uh.edu/dgraur/">Dan Graur’s site</a></p>
+
+<p><a href="http://backreaction.blogspot.com/2014/11/the-underappreciated-value-of-boring.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Backreaction+%28Backreaction%29">Backreaction</a></p>
+
+<p><a href="http://www.dailycognition.com/index.php/2009/07/09/25-acts-of-body-language-to-avoid.html">Body Language</a></p>
+
+<p><a href="http://sc.zdic.net/weijin/0603/18/00373cbe01fcbc46ad854ee69fe35c0f.html">汉典诗词</a></p>
 
 <h3 id="visualization">Visualization</h3>
-<p><a href="http://arohatgi.info/WebPlotDigitizer/app/">PlotDigitizer</a>
-<a href="http://www.gnuplotting.org/plotting-the-world-revisited/">Gnuplotting</a>
-<a href="http://dragly.org/2010/09/27/updated-method-for-drawing-springs-in-inkscape/">Draw springs in Inkscape</a>
-<a href="http://blog.sina.com.cn/s/blog_4ac35a650100xktr.html">Matlab Colormap</a>
-<a href="http://www.thinkoutsidetheslide.com/choosing-colors-for-your-presentation-slides/">Colors Slides</a></p>
+
+<p><a href="http://arohatgi.info/WebPlotDigitizer/app/">PlotDigitizer</a></p>
+
+<p><a href="http://www.gnuplotting.org/plotting-the-world-revisited/">Gnuplotting</a></p>
+
+<p><a href="http://dragly.org/2010/09/27/updated-method-for-drawing-springs-in-inkscape/">Draw springs in Inkscape</a></p>
+
+<p><a href="http://blog.sina.com.cn/s/blog_4ac35a650100xktr.html">Matlab Colormap</a></p>
+
+<p><a href="http://www.thinkoutsidetheslide.com/choosing-colors-for-your-presentation-slides/">Colors Slides</a></p>
 
 <h3 id="linux--hpc">Linux &amp; HPC</h3>
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-centos-6">How To Set Up an NFS Mount</a>
-<a href="https://help.ubuntu.com/community/SettingUpNFSHowTo">SettingUpNFSHowTo</a>
-<a href="http://unix.stackexchange.com/questions/60574/determining-cause-of-linux-kernel-panic">Determining cause of Linux kernel panic</a>
-<a href="http://www.webstreet.com/super_computer.htm">Building Your Own Super Computer</a>
-<a href="https://developer.nvidia.com/how-to-cuda-c-cpp">CUDA</a>
-<a href="https://docstore.mik.ua/orelly/networking_2ndEd/ssh/ch03_09.htm">Algorithms by SSH</a>
-<a href="https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html">Lustre Best Practices</a>
-<a href="http://users.open-mpi.narkive.com/FIUSC8xH/ompi-users-orte-has-lost-communication">[OMPI users] orte has lost communication</a></p>]]></content><author><name></name></author><category term="resources" /><category term="links" /><summary type="html"><![CDATA[A collection of bookmarks converted links]]></summary></entry><entry><title type="html">Molecular dynamics</title><link href="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/" rel="alternate" type="text/html" title="Molecular dynamics" /><published>2023-08-28T22:35:00+00:00</published><updated>2023-08-28T22:35:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/molecular-dynamics-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/"><![CDATA[<h4 id="md-basics">MD basics</h4>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-centos-6">How To Set Up an NFS Mount</a></p>
+
+<p><a href="https://help.ubuntu.com/community/SettingUpNFSHowTo">SettingUpNFSHowTo</a></p>
+
+<p><a href="http://unix.stackexchange.com/questions/60574/determining-cause-of-linux-kernel-panic">Determining cause of Linux kernel panic</a></p>
+
+<p><a href="http://www.webstreet.com/super_computer.htm">Building Your Own Super Computer</a></p>
+
+<p><a href="https://developer.nvidia.com/how-to-cuda-c-cpp">CUDA</a></p>
+
+<p><a href="https://docstore.mik.ua/orelly/networking_2ndEd/ssh/ch03_09.htm">Algorithms by SSH</a></p>
+
+<p><a href="https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html">Lustre Best Practices</a></p>
+
+<p><a href="http://users.open-mpi.narkive.com/FIUSC8xH/ompi-users-orte-has-lost-communication">[OMPI users] orte has lost communication</a></p>]]></content><author><name></name></author><category term="resources" /><category term="links" /><summary type="html"><![CDATA[A collection of bookmarks converted links]]></summary></entry><entry><title type="html">Molecular dynamics</title><link href="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/" rel="alternate" type="text/html" title="Molecular dynamics" /><published>2023-08-28T22:35:00+00:00</published><updated>2023-08-28T22:35:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/molecular-dynamics-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/"><![CDATA[<h4 id="md-basics">MD basics</h4>
 <ul>
     <li><a href="https://people.chem.umass.edu/jchenlab/mdref.html">Jianhan's recommendations</a></li>
     <li><a href="http://www.chem1.com/acad/webtext/thermeq/index.html">Thermodynamics of chemical equilibrium</a></li>
