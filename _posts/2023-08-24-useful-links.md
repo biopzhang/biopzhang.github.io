@@ -24,7 +24,7 @@ categories: resources
 <hr>
 
 ### Bioinformatics
-### Protein
+#### Protein
 <ul>
     <li><a href="https://www.biostars.org/p/126011">COG assignment using COGNITOR</a></li>
     <li><a href="http://www.cathdb.info/">CATH</a></li>
