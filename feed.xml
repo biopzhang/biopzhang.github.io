@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://biopzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://biopzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-30T03:26:04+00:00</updated><id>https://biopzhang.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://biopzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://biopzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-30T03:31:58+00:00</updated><id>https://biopzhang.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Bookmarks</title><link href="https://biopzhang.github.io/blog/2023/bookmarks/" rel="alternate" type="text/html" title="Bookmarks" /><published>2023-08-29T21:48:00+00:00</published><updated>2023-08-29T21:48:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/bookmarks</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/bookmarks/"><![CDATA[<h3 id="programming">Programming</h3>
 
 <p><a href="https://cvw.cac.cornell.edu/topics">Cornell HPC workshops</a></p>
@@ -116,7 +116,7 @@
     <li><a href="https://ambermd.org/tutorials/">AMBER</a></li>
     <li><a href="https://tutorials.gromacs.org/">GROM</a></li>
     <li><a href="https://dasher.wustl.edu/tinker/">Tinker</a></li>
-</ul>]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links" /><summary type="html"><![CDATA[A collection of links on molecular dynamics]]></summary></entry><entry><title type="html">Useful links on bioinformatics</title><link href="https://biopzhang.github.io/blog/2023/useful-links/" rel="alternate" type="text/html" title="Useful links on bioinformatics" /><published>2023-08-24T16:40:16+00:00</published><updated>2023-08-24T16:40:16+00:00</updated><id>https://biopzhang.github.io/blog/2023/useful-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/useful-links/"><![CDATA[<h4 id="plotting">Plotting</h4>
+</ul>]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links" /><summary type="html"><![CDATA[A collection of links on molecular dynamics]]></summary></entry><entry><title type="html">Useful links on bioinformatics</title><link href="https://biopzhang.github.io/blog/2023/useful-links/" rel="alternate" type="text/html" title="Useful links on bioinformatics" /><published>2023-08-24T16:40:16+00:00</published><updated>2023-08-24T16:40:16+00:00</updated><id>https://biopzhang.github.io/blog/2023/useful-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/useful-links/"><![CDATA[<h3 id="visualization">Visualization</h3>
 <ul>
     <li><a href="https://huygens.science.uva.nl/VolcaNoseR">Volcano</a></li>
     <li><a href="https://software.broadinstitute.org/morpheus">Heatmap</a></li>
@@ -124,17 +124,28 @@
 
 <hr />
 
-<h4 id="dimension-reduction">Dimension reduction</h4>
+<h3 id="dimension-reduction">Dimension reduction</h3>
 <ul>
-    <li><a href="    https://ordination.okstate.edu/PCA.htm">PCA</a></li>
+    <li><a href="https://ordination.okstate.edu/PCA.htm">PCA</a></li>
+    <li><a href="http://strata.uga.edu/6370/lecturenotes/principalComponents.html">PCA</a></li>
     <li><a href="https://pair-code.github.io/understanding-umap">UMAP</a></li>
-
 </ul>
 
-<!---               
-http://bioconductor.org/books/3.14/OSCA.advanced/more-norm.html#overview-1
-https://plotly.com/python/shapes/
--->]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links" /><summary type="html"><![CDATA[A collection of links]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="https://biopzhang.github.io/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes" /><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p>
+<hr />
+
+<h3 id="bioinformatics">Bioinformatics</h3>
+<h3 id="protein">Protein</h3>
+<ul>
+    <li><a href="https://www.biostars.org/p/126011">COG assignment using COGNITOR</a></li>
+    <li><a href="http://www.cathdb.info/">CATH</a></li>
+    <li><a href="https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp?redirect=auth">MassIVE</a></li>
+    <li><a href="https://github.com/smith-chem-wisc/MetaMorpheus/wiki">MetaMorpheus</a></li>
+</ul>
+
+<h4 id="single-cell-analyses">Single cell analyses</h4>
+<ul>
+    <li><a href="http://bioconductor.org/books/3.14/OSCA.advanced/">Single cell analysis with bioconductor</a></li>
+</ul>]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links" /><summary type="html"><![CDATA[A collection of links]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="https://biopzhang.github.io/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes" /><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p>
 
 <p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p>
 
