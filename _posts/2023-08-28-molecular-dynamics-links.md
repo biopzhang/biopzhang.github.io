@@ -45,7 +45,7 @@ categories: resources
     <li><a href="https://www.ebi.ac.uk/Tools/msa/clustalo/"> Multi-sequence alignment: Clustal Omega</a></li>
     <li><a href="http://calcium.uhnres.utoronto.ca/ctdb/ctdb/motifs/b1814_subclass_align.html">Calmodulin Target Database</a></li>
     <li><a href="https://www.basissetexchange.org/">QM basis set</a></li>
-    <li><a href="https://fossies.org/dox/gromacs-2018.3/idef_8h.html#ac791b66a82093c303b1b2aaf4f185edea44ee4500e2031b8a5fc52b4f25e81780"</a></li>
+    <li><a href="https://fossies.org/dox/gromacs-2018.3/idef_8h.html#ac791b66a82093c303b1b2aaf4f185edea44ee4500e2031b8a5fc52b4f25e81780">GROMACS topology</a></li>
 </ul>
 
 <hr>
