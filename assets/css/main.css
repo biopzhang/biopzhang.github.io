@@ -1053,5 +1053,11 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .altmetric-embed svg,
+  .altmetric-embed img {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
