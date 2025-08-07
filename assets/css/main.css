@@ -1054,9 +1054,10 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   }
 }
 @media (prefers-color-scheme: dark) {
-  .altmetric-embed svg,
-  .altmetric-embed img {
-    filter: invert(1) hue-rotate(180deg);
+  .altmetric-embed svg text,
+  .altmetric-embed svg tspan {
+    fill: #fff !important;
+    color: #fff !important;
   }
 }
 
