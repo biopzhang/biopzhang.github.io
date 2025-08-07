@@ -38,29 +38,6 @@
             {% assign author_array_limit = site.max_author_limit %}
           {% endif %}
 
-          {%- comment -%}
-            Determine if this entry contains co-first authors. We mark authors as co-first if
-            their last name contains one of the following symbols: &, *, ¶, †, or ^.
-          {%- endcomment -%}
-          {%- assign co_first_exists = false -%}
-          {%- for check_author in entry.author_array -%}
-            {%- if check_author.last contains '&' -%}
-              {%- assign co_first_exists = true -%}
-            {%- endif -%}
-            {%- if check_author.last contains '*' -%}
-              {%- assign co_first_exists = true -%}
-            {%- endif -%}
-            {%- if check_author.last contains '¶' -%}
-              {%- assign co_first_exists = true -%}
-            {%- endif -%}
-            {%- if check_author.last contains '†' -%}
-              {%- assign co_first_exists = true -%}
-            {%- endif -%}
-            {%- if check_author.last contains '^' -%}
-              {%- assign co_first_exists = true -%}
-            {%- endif -%}
-          {%- endfor -%}
-
           {%- for author in entry.author_array limit: author_array_limit -%}
             {%- assign author_is_self = false -%}
             {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
@@ -83,40 +60,14 @@
               {%- if forloop.first == false -%},&nbsp;{%- endif -%}
               {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
             {%- endif -%}
-            {%- assign last_name_clean = author.last -%}
-            {%- assign co_first_mark = '' -%}
-            {%- if last_name_clean contains '&' -%}
-              {%- assign co_first_mark = '*' -%}
-              {%- assign last_name_clean = last_name_clean | remove: '&' -%}
-            {%- endif -%}
-            {%- if last_name_clean contains '*' -%}
-              {%- assign co_first_mark = '*' -%}
-              {%- assign last_name_clean = last_name_clean | remove: '*' -%}
-            {%- endif -%}
-            {%- if last_name_clean contains '¶' -%}
-              {%- assign co_first_mark = '*' -%}
-              {%- assign last_name_clean = last_name_clean | remove: '¶' -%}
-            {%- endif -%}
-            {%- if last_name_clean contains '†' -%}
-              {%- assign co_first_mark = '*' -%}
-              {%- assign last_name_clean = last_name_clean | remove: '†' -%}
-            {%- endif -%}
-            {%- if last_name_clean contains '^' -%}
-              {%- assign co_first_mark = '*' -%}
-              {%- assign last_name_clean = last_name_clean | remove: '^' -%}
-            {%- endif -%}
-            {%- capture display_name -%}
-              {{author.first}} {{last_name_clean}}{%- if co_first_mark != '' -%}<sup>{{co_first_mark}}</sup>{%- endif -%}
-            {%- endcapture -%}
             {%- if author_is_self -%}
-              <em>{{ display_name | strip }}</em>
+              <em>{{author.first}} {{author.last}}</em>
             {%- else -%}
               {%- if coauthor_url -%}
-                <a href="{{coauthor_url}}">{{ display_name | strip }}</a>
+                <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
               {%- else -%}
-                {{ display_name | strip }}
+                {{author.first}} {{author.last}}
               {%- endif -%}
-            {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
           {%- assign more_authors = author_array_size | minus: author_array_limit -%}
@@ -153,11 +104,6 @@
           {%- endif -%}
 
           </div>
-          {%- if co_first_exists -%}
-          <div class="co-first-note">
-            <small><em>* indicates co-first authors</em></small>
-          </div>
-          {%- endif -%}
 
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
