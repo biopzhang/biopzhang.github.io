@@ -13,3 +13,10 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+@media (prefers-color-scheme: dark) {
+  .altmetric-embed svg,
+  .altmetric-embed img {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
