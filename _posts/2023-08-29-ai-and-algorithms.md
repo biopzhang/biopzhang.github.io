@@ -8,15 +8,21 @@ categories: resources
 ---
 
 ### Deep Learning
+
 <ul>
+    <li><a href="https://ermongroup.github.io/cs228-notes/inference/variational/">Variational inference</a></li>
+    <li><a href="https://towardsdatascience.com/difference-between-autoencoder-ae-and-variational-autoencoder-vae-ed7be1c038f2">Difference between AutoEncoder (AE) and Variational AutoEncoder (VAE) | by Aqeel Anwar | Towards Data Science</a></li>
+    <li><a href="https://cs231n.github.io/neural-networks-1/">CS231n Convolutional Neural Networks for Visual Recognition</a></li>
     <li><a href="http://www.deeplearningbook.org/">Deep Learning</a></li>
     <li><a href="https://github.com/ritchieng/deep-learning-wizard">Open source guides/codes for mastering deep learning to deploying deep learning</a></li>
     <li><a href="https://wandb.ai/sauravmaheshkar/LSTM-PyTorch/reports/Using-LSTM-in-PyTorch-A-Tutorial-With-Examples--VmlldzoxMDA2NTA5">Using LSTM in PyTorch: A Tutorial With Examples – Weights & Biases</a></li>
+    <li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/">What are Diffusion Models? | Lil'Log</a></li>
 </ul>
 
 <hr>
 
 ### Large Language Models (LLM)
+
 <ul>
     <li><a href="https://llava-vl.github.io/">LLaVA</a></li>
     <li><a href="https://www.nature.com/articles/d41586-024-00674-9">AI image generators often give racist and sexist results: can they be fixed?</a></li>
@@ -38,9 +44,8 @@ categories: resources
 <hr>
 
 ### Machine Learning & Algorithms
+
 <ul>
-    <li><a href="https://ermongroup.github.io/cs228-notes/inference/variational/">Variational inference</a></li>
-    <li><a href="https://towardsdatascience.com/difference-between-autoencoder-ae-and-variational-autoencoder-vae-ed7be1c038f2">Difference between AutoEncoder (AE) and Variational AutoEncoder (VAE) | by Aqeel Anwar | Towards Data Science</a></li>
     <li><a href="https://tech.gorilla.co/how-can-we-quantify-similarity-between-time-series-ed1d0b633ca0">How can we quantify similarity between time series? | by Alexander Bader | Gorilla Tech Blog</a></li>
     <li><a href="https://bioinfo.iric.ca/understanding-how-kallisto-works/">Understanding how kallisto works &#x2013; IRIC's Bioinformatics Platform</a></li>
     <li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></li>
@@ -50,26 +55,21 @@ categories: resources
     <li><a href="https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/43512887#43512887">Peak signal detection</a></li>
     <li><a href="https://cs230.stanford.edu/section/4/#l1-and-l2-regularization">Section 4 (Week 4)</a></li>
     <li><a href="https://elitedatascience.com/overfitting-in-machine-learning">Overfitting in Machine Learning: What It Is and How to Prevent It</a></li>
-    <li><a href="https://www.linkedin.com/learning/statistics-foundations-2/significance-test-for-proportions?u=78588490">Significance test for proportions</a></li>
     <li><a href="https://elitedatascience.com/machine-learning-iteration#micro">The 5 Levels of Machine Learning Iteration</a></li>
     <li><a href="http://www.cs.cornell.edu/courses/cs4780/2015fa/web/lecturenotes/lecturenote13.html">13: Bias/Variance and Model Selection</a></li>
     <li><a href="https://github.com/OmicsML/awesome-deep-learning-single-cell-papers">OmicsML/awesome-deep-learning-single-cell-papers</a></li>
-    <li><a href="https://cs231n.github.io/neural-networks-1/">CS231n Convolutional Neural Networks for Visual Recognition</a></li>
     <li><a href="https://blog.research.google/2020/10/rethinking-attention-with-performers.html">Rethinking Attention with Performers – Google Research Blog</a></li>
-    <li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/">What are Diffusion Models? | Lil'Log</a></li>
     <li><a href="https://christophm.github.io/interpretable-ml-book/shapley.html">9.5 Shapley Values | Interpretable Machine Learning</a></li>
-    <li><a href="https://github.com/bhargavchippada/forceatlas2">bhargavchippada/forceatlas2: Fastest Gephi's ForceAtlas2 graph layout algorithm implemented for Python and NetworkX</a></li>
-    <li><a href="https://towardsdatascience.com/drawing-the-transformer-network-from-scratch-part-1-9269ed9a2c5e">Drawing the Transformer Network from Scratch (Part 1) | by Thomas Kurbiel | Towards Data Science</a></li>
     <li><a href="https://scikit-survival.readthedocs.io/en/stable/user_guide/random-survival-forest.html">Using Random Survival Forests — scikit-survival 0.22.2</a></li>
 </ul>
 
 <hr>
 
 ### Dimension Reduction
+
 <ul>
     <li><a href="http://strata.uga.edu/6370/lecturenotes/principalComponents.html">PCA</a></li>
     <li><a href="https://pair-code.github.io/understanding-umap">UMAP</a></li>
 </ul>
 
 <hr>
-
