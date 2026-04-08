@@ -2,26 +2,23 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href="https://www.researchgate.net/profile/Pengzhi-Zhang-2">Researcher</a>. 
-
+description: ''
+nav: true
+nav_order: null
 profile:
-  align: right
+  address: <p>Houston Methodist Research Institute</p> <p>6670 Bertner Ave</p> <p>Houston, TX 77030</p>
+  image_circular: true
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
-  address: >
-    <p>Houston Methodist Research Institute</p>
-    <p>6670 Bertner Ave</p>
-    <p>Houston, TX 77030</p>
-
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+  align: right
+subtitle: <a href="https://www.researchgate.net/profile/Pengzhi-Zhang-2">Researcher</a>.
+news: true
+latest_posts: true
+selected_papers: true
+social: true
 ---
 
-I study biophysics of protein-protein interaction using statistical physics and computational modelling. My research interest extends to bioinformatics, especially in developing machine learning and deep learning tools for RNA-seq analyses. I am currently a research associate in Dr. <a href="https://guangyuwanglab.github.io/web/index.html#">Guangyu Wang</a>'s computational biology and bioinformatics lab in Houston Methodist Research Institute. 
+We study how disease micro-environments shape human health by integrating multimodal omics with digital pathology. By linking spatial transcriptomics and single-cell genomics to tissue architecture in clinical imaging, we capture how cells interact within complex tissues.
 
->
-> The true sign of intelligence is not knowledge but <strong>imagination</strong>. 
-> —Albert Einstein
+We develop robust, interpretable machine learning methods to analyze large-scale patient data. Our goal is to identify spatial and molecular patterns that inform prognosis, treatment response, and disease risk. By connecting molecular activity with tissue organization, we aim to discover clinically actionable biomarkers and therapeutic targets that advance precision medicine and improve public health.
 
+We are an interdisciplinary group and welcome trainees from biomedical and quantitative fields.
