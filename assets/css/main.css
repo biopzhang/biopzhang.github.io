@@ -1053,12 +1053,5 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
-@media (prefers-color-scheme: dark) {
-  .altmetric-embed svg text,
-  .altmetric-embed svg tspan {
-    fill: #fff !important;
-    color: #fff !important;
-  }
-}
 
 /*# sourceMappingURL=main.css.map */
