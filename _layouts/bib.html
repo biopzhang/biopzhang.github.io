@@ -230,50 +230,20 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
           {%- if entry.doi %}
-            <i class="ai ai-doi ai-fw"></i> 
-            <a href="https://doi.org/{{ entry.doi }}" 
-              target="_blank">{{ entry.doi }}
-            </a>
-
-  <div style="display: table;">
-    <!--    <div style="display: table-row; height: 22px"></div> -->
-    <div style="display: table-row;">
-      <div style="display: table-cell; width: 20px;"></div>
-
-      <a href="https://plu.mx/plum/a/?doi={{ entry.doi }}" 
-        data-popup="right" 
-        data-size="large"
-        class="plumx-plum-print-popup plum-bigben-theme" 
-        data-site="plum" 
-        data-hide-when-empty="false" 
-        data-pass-hidden-categories="true"
-        style="display:block">
-      </a>
-      
-      <div style="display: table-cell; width: 20px;"></div>
-      <div style="display: table-cell;" 
-        data-badge-details="right"
-        data-badge-popover="right" 
-        data-condensed="true"
-        data-badge-type="donut" 
-        data-doi="{{ entry.doi }}" 
-        data-hide-no-mentions="false" 
-        class="altmetric-embed">
-      </div>
-
-      <div style="display: table-cell; width: 80px;"></div>
-      <div style="display: table-cell;" 
-           class="__dimensions_badge_embed__"
-           data-doi="{{ entry.doi }}" 
-           data-hide-zero-citations="false"
-           data-legend="hover-right"
-           data-style="small_circle"> 
-        </div>
-    </div>
-    <div style="display: table-row; height: 22px"></div>
-  </div>
-
-
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <span style="display: inline-flex; align-items: center; gap: 4px;">
+                <i class="ai ai-doi ai-fw"></i>
+                <a href="https://doi.org/{{ entry.doi }}" 
+                  target="_blank">{{ entry.doi }}
+                </a>
+              </span>
+              <span class="__dimensions_badge_embed__"
+                    data-doi="{{ entry.doi }}" 
+                    data-hide-zero-citations="false"
+                    data-legend="hover-right"
+                    data-style="small_circle">
+              </span>
+            </div>
           {%- endif %}
           {% if entry.abstract -%}
           <!-- Hidden abstract block -->
@@ -292,6 +262,4 @@
         </div>
       </div>
 
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
