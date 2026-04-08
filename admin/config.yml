@@ -3,6 +3,9 @@ backend:
   repo: biopzhang/biopzhang.github.io
   branch: master
 
+# Enable Local Backend to edit files on your hard drive directly
+local_backend: true
+
 # Publishing settings
 media_folder: "assets/images"
 public_folder: "/assets/images"
@@ -33,4 +36,17 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Inline", name: "inline", widget: "boolean", required: false, default: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "pages"
+    label: "Static Pages (About, CV, etc)"
+    folder: "_pages"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "string", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Description/Subtitle", name: "description", widget: "string", required: false}
+      - {label: "Nav Checkbox", name: "nav", widget: "boolean", required: false}
+      - {label: "Nav Order", name: "nav_order", widget: "number", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
