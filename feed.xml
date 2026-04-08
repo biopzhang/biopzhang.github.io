@@ -1,73 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://biopzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://biopzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-04-08T06:04:47+00:00</updated><id>https://biopzhang.github.io/feed.xml</id><title type="html">blank</title><subtitle>Personal website of Pengzhi Zhang — biophysics, computational biology, and bioinformatics.
-</subtitle><entry><title type="html">Bookmarks</title><link href="https://biopzhang.github.io/blog/2023/bookmarks/" rel="alternate" type="text/html" title="Bookmarks" /><published>2023-08-29T21:48:00+00:00</published><updated>2023-08-29T21:48:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/bookmarks</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/bookmarks/"><![CDATA[<h3 id="programming">Programming</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://biopzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://biopzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-04-08T12:45:12+00:00</updated><id>https://biopzhang.github.io/feed.xml</id><title type="html">blank</title><subtitle>Personal website of Pengzhi Zhang — biophysics, computational biology, and bioinformatics.
+</subtitle><entry><title type="html">Data Visualization Tools</title><link href="https://biopzhang.github.io/blog/2023/visualization-tools/" rel="alternate" type="text/html" title="Data Visualization Tools" /><published>2023-08-31T09:00:00+00:00</published><updated>2023-08-31T09:00:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/visualization-tools</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/visualization-tools/"><![CDATA[<h3 id="visualization">Visualization</h3>
+<ul>
+    <li><a href="https://huygens.science.uva.nl/VolcaNoseR">Volcano</a></li>
+    <li><a href="https://software.broadinstitute.org/morpheus">Heatmap</a></li>
+    <li><a href="http://www.gnuplotting.org/plotting-the-world-revisited/">Gnuplotting</a></li>
+    <li><a href="http://dragly.org/2010/09/27/updated-method-for-drawing-springs-in-inkscape/">Draw springs in Inkscape</a></li>
+    <li><a href="http://www.thinkoutsidetheslide.com/choosing-colors-for-your-presentation-slides/">Colors Slides</a></li>
+</ul>
 
-<p><a href="https://cvw.cac.cornell.edu/topics">Cornell HPC workshops</a></p>
+<hr />]]></content><author><name></name></author><category term="resources" /><category term="visualization," /><category term="graphics" /><summary type="html"><![CDATA[Resources and tools for graphing and visualizing data.]]></summary></entry><entry><title type="html">Programming, Python &amp;amp; HPC</title><link href="https://biopzhang.github.io/blog/2023/programming-and-hpc/" rel="alternate" type="text/html" title="Programming, Python &amp;amp; HPC" /><published>2023-08-30T09:00:00+00:00</published><updated>2023-08-30T09:00:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/programming-and-hpc</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/programming-and-hpc/"><![CDATA[<h3 id="python">Python</h3>
+<ul>
+    <li><a href="https://holoviews.org/index.html">Installation — HoloViews v1.14.8</a></li>
+    <li><a href="https://www.machinelearningplus.com/python/parallel-processing-python/">Parallel Processing in Python - A Practical Guide with Examples | ML+</a></li>
+    <li><a href="https://github.com/stardist/stardist/issues/19">Import Error - dlopen Expected in: flat namespace · Issue #19 · stardist/stardist</a></li>
+    <li><a href="https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084">How to add your Conda environment to your jupyter notebook in just 4 steps | by Noopur R K | Medium</a></li>
+    <li><a href="https://stackoverflow.com/questions/76378414/add-new-polygon-to-dash-leaflet-map-via-a-callback">python - Add New Polygon to Dash Leaflet Map via a Callback - Stack Overflow</a></li>
+    <li><a href="https://matplotlib.org/stable/gallery/color/named_colors.html">List of named colors — Matplotlib 3.4.2 documentation</a></li>
+</ul>
 
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">Python Extension Packages for Windows</a></p>
+<hr />
 
-<p><a href="http://www.geeksforgeeks.org/object-oriented-programming-in-python-set-1-class-and-its-members/">Object Oriented Programming in Python</a></p>
+<h3 id="programming--scripting">Programming &amp; Scripting</h3>
+<ul>
+    <li><a href="https://cvw.cac.cornell.edu/topics">Cornell HPC workshops</a></li>
+    <li><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">Python Extension Packages for Windows</a></li>
+    <li><a href="http://www.geeksforgeeks.org/object-oriented-programming-in-python-set-1-class-and-its-members/">Object Oriented Programming in Python</a></li>
+    <li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Python Decorators</a></li>
+    <li><a href="https://regex101.com/">Online regex tester and debugger</a></li>
+    <li><a href="http://xmlprettyprint.com/">XML Pretty Print</a></li>
+    <li><a href="http://sed.sourceforge.net/sed1line.txt">Sed1line</a></li>
+</ul>
 
-<p><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Python Decorators</a></p>
+<hr />
 
-<p><a href="https://regex101.com/">Online regex tester and debugger</a></p>
+<h3 id="linux--high-performance-computing">Linux &amp; High Performance Computing</h3>
+<ul>
+    <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-centos-6">How To Set Up an NFS Mount</a></li>
+    <li><a href="https://help.ubuntu.com/community/SettingUpNFSHowTo">SettingUpNFSHowTo</a></li>
+    <li><a href="http://unix.stackexchange.com/questions/60574/determining-cause-of-linux-kernel-panic">Determining cause of Linux kernel panic</a></li>
+    <li><a href="https://developer.nvidia.com/how-to-cuda-c-cpp">CUDA</a></li>
+    <li><a href="https://docstore.mik.ua/orelly/networking_2ndEd/ssh/ch03_09.htm">Algorithms by SSH</a></li>
+    <li><a href="https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html">Lustre Best Practices</a></li>
+</ul>
 
-<p><a href="http://xmlprettyprint.com/">XML Pretty Print</a></p>
+<hr />]]></content><author><name></name></author><category term="resources" /><category term="python," /><category term="hpc," /><category term="programming" /><summary type="html"><![CDATA[Programming guides, Python techniques, and Linux/HPC setups.]]></summary></entry><entry><title type="html">AI, Deep Learning &amp;amp; Algorithms</title><link href="https://biopzhang.github.io/blog/2023/ai-and-algorithms/" rel="alternate" type="text/html" title="AI, Deep Learning &amp;amp; Algorithms" /><published>2023-08-29T21:48:00+00:00</published><updated>2023-08-29T21:48:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/ai-and-algorithms</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/ai-and-algorithms/"><![CDATA[<h3 id="deep-learning">Deep Learning</h3>
+<ul>
+    <li><a href="http://www.deeplearningbook.org/">Deep Learning</a></li>
+    <li><a href="https://github.com/ritchieng/deep-learning-wizard">Open source guides/codes for mastering deep learning to deploying deep learning</a></li>
+    <li><a href="https://wandb.ai/sauravmaheshkar/LSTM-PyTorch/reports/Using-LSTM-in-PyTorch-A-Tutorial-With-Examples--VmlldzoxMDA2NTA5">Using LSTM in PyTorch: A Tutorial With Examples – Weights &amp; Biases</a></li>
+</ul>
 
-<p><a href="http://sed.sourceforge.net/sed1line.txt">Sed1line</a></p>
+<hr />
 
-<p><a href="http://www.sqlcourse2.com/select2.html">SQL SELECT Statement</a></p>
+<h3 id="large-language-models-llm">Large Language Models (LLM)</h3>
+<ul>
+    <li><a href="https://llava-vl.github.io/">LLaVA</a></li>
+    <li><a href="https://www.nature.com/articles/d41586-024-00674-9">AI image generators often give racist and sexist results: can they be fixed?</a></li>
+    <li><a href="https://medium.com/@brianpulfer/enerating-images-with-ddpms-a-pytorch-implementation-cef5a2ba8cb1">Generating images with DDPMs: A PyTorch Implementation | by Brian Pulfer | Medium</a></li>
+    <li><a href="https://klaviyo.tech/trying-to-understand-stable-diffusion-ea55eefca798">Trying to Understand Stable Diffusion | by Eric Silberstein | Klaviyo Engineering</a></li>
+    <li><a href="https://huggingface.co/docs/huggingface_hub/en/package_reference/environment_variables">Environment variables</a></li>
+    <li><a href="https://huggingface.co/docs/diffusers/main/en/api/pipelines/overview">Pipelines</a></li>
+    <li><a href="https://biocypher.org/">Democratising Knowledge Graphs — BioCypher</a></li>
+    <li><a href="https://light.biochatter.org/">BioChatter Light</a></li>
+    <li><a href="https://huggingface.co/spaces/exbert-project/exbert">Exbert</a></li>
+    <li><a href="http://incompleteideas.net/">Rich Sutton's Home Page</a></li>
+    <li><a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">The Bitter Lesson</a></li>
+    <li><a href="https://www.pinecone.io/learn/series/image-search/vision-transformers/">Vision Transformers (ViT) Explained | Pinecone</a></li>
+    <li><a href="https://huggingface.co/ctheodoris/Geneformer">ctheodoris/Geneformer · Hugging Face</a></li>
+    <li><a href="https://terrytao.wordpress.com/">What's new | Updates on my research and expository papers, discussion of open problems, and other maths-related topics. By Terence Tao</a></li>
+    <li><a href="https://www.10xgenomics.com/analysis-guides/testing-microscope-image-compatibility-with-space-ranger">Testing Microscope Image Compatibility with Space Ranger - 10x Genomics</a></li>
+</ul>
 
-<h3 id="deep-learning">Deep learning</h3>
+<hr />
 
-<p><a href="http://www.deeplearningbook.org/">Deep Learning</a></p>
+<h3 id="machine-learning--algorithms">Machine Learning &amp; Algorithms</h3>
+<ul>
+    <li><a href="https://ermongroup.github.io/cs228-notes/inference/variational/">Variational inference</a></li>
+    <li><a href="https://towardsdatascience.com/difference-between-autoencoder-ae-and-variational-autoencoder-vae-ed7be1c038f2">Difference between AutoEncoder (AE) and Variational AutoEncoder (VAE) | by Aqeel Anwar | Towards Data Science</a></li>
+    <li><a href="https://tech.gorilla.co/how-can-we-quantify-similarity-between-time-series-ed1d0b633ca0">How can we quantify similarity between time series? | by Alexander Bader | Gorilla Tech Blog</a></li>
+    <li><a href="https://bioinfo.iric.ca/understanding-how-kallisto-works/">Understanding how kallisto works &#x2013; IRIC's Bioinformatics Platform</a></li>
+    <li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></li>
+    <li><a href="https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21">Illustrated Guide to LSTM’s and GRU’s: A step by step explanation | by Michael Phi | Towards Data Science</a></li>
+    <li><a href="https://www.r-bloggers.com/2020/01/comparing-ensembl-gtf-and-cdna/">Comparing Ensembl GTF and cDNA | R-bloggers</a></li>
+    <li><a href="https://towardsdatascience.com/list-of-awesome-open-source-machine-learning-repos-537fdc08ad4d">List of Awesome Open Source Machine Learning Project Repos | by Ravindu Senaratne | Towards Data Science</a></li>
+    <li><a href="https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/43512887#43512887">Peak signal detection</a></li>
+    <li><a href="https://cs230.stanford.edu/section/4/#l1-and-l2-regularization">Section 4 (Week 4)</a></li>
+    <li><a href="https://elitedatascience.com/overfitting-in-machine-learning">Overfitting in Machine Learning: What It Is and How to Prevent It</a></li>
+    <li><a href="https://www.linkedin.com/learning/statistics-foundations-2/significance-test-for-proportions?u=78588490">Significance test for proportions</a></li>
+    <li><a href="https://elitedatascience.com/machine-learning-iteration#micro">The 5 Levels of Machine Learning Iteration</a></li>
+    <li><a href="http://www.cs.cornell.edu/courses/cs4780/2015fa/web/lecturenotes/lecturenote13.html">13: Bias/Variance and Model Selection</a></li>
+    <li><a href="https://github.com/OmicsML/awesome-deep-learning-single-cell-papers">OmicsML/awesome-deep-learning-single-cell-papers</a></li>
+    <li><a href="https://cs231n.github.io/neural-networks-1/">CS231n Convolutional Neural Networks for Visual Recognition</a></li>
+    <li><a href="https://blog.research.google/2020/10/rethinking-attention-with-performers.html">Rethinking Attention with Performers – Google Research Blog</a></li>
+    <li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/">What are Diffusion Models? | Lil'Log</a></li>
+    <li><a href="https://christophm.github.io/interpretable-ml-book/shapley.html">9.5 Shapley Values | Interpretable Machine Learning</a></li>
+    <li><a href="https://github.com/bhargavchippada/forceatlas2">bhargavchippada/forceatlas2: Fastest Gephi's ForceAtlas2 graph layout algorithm implemented for Python and NetworkX</a></li>
+    <li><a href="https://towardsdatascience.com/drawing-the-transformer-network-from-scratch-part-1-9269ed9a2c5e">Drawing the Transformer Network from Scratch (Part 1) | by Thomas Kurbiel | Towards Data Science</a></li>
+    <li><a href="https://scikit-survival.readthedocs.io/en/stable/user_guide/random-survival-forest.html">Using Random Survival Forests — scikit-survival 0.22.2</a></li>
+</ul>
 
-<p><a href="https://github.com/ritchieng/deep-learning-wizard">Open source guides/codes for mastering deep learning to deploying deep learning</a></p>
+<hr />
 
-<p><a href="https://wandb.ai/sauravmaheshkar/LSTM-PyTorch/reports/Using-LSTM-in-PyTorch-A-Tutorial-With-Examples--VmlldzoxMDA2NTA5">Using LSTM in PyTorch: A Tutorial With Examples – Weights &amp; Biases</a></p>
+<h3 id="dimension-reduction">Dimension Reduction</h3>
+<ul>
+    <li><a href="http://strata.uga.edu/6370/lecturenotes/principalComponents.html">PCA</a></li>
+    <li><a href="https://pair-code.github.io/understanding-umap">UMAP</a></li>
+</ul>
 
-<p><a href="http://deeplearning.net/software/theano/tutorial/python-memory-management.html">Python Memory Management — Theano</a></p>
-
-<h3 id="fun">Fun</h3>
-
-<p><a href="https://ccsb.scripps.edu/gallery/mycoplasma_model/">3D Whole Cell Model of a Mycoplasma Bacterium</a></p>
-
-<p><a href="http://nsmn1.uh.edu/dgraur/">Dan Graur’s site</a></p>
-
-<p><a href="http://backreaction.blogspot.com/2014/11/the-underappreciated-value-of-boring.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Backreaction+%28Backreaction%29">Backreaction</a></p>
-
-<p><a href="http://www.dailycognition.com/index.php/2009/07/09/25-acts-of-body-language-to-avoid.html">Body Language</a></p>
-
-<p><a href="http://sc.zdic.net/weijin/0603/18/00373cbe01fcbc46ad854ee69fe35c0f.html">汉典诗词</a></p>
-
-<h3 id="visualization">Visualization</h3>
-
-<p><a href="http://arohatgi.info/WebPlotDigitizer/app/">PlotDigitizer</a></p>
-
-<p><a href="http://www.gnuplotting.org/plotting-the-world-revisited/">Gnuplotting</a></p>
-
-<p><a href="http://dragly.org/2010/09/27/updated-method-for-drawing-springs-in-inkscape/">Draw springs in Inkscape</a></p>
-
-<p><a href="http://blog.sina.com.cn/s/blog_4ac35a650100xktr.html">Matlab Colormap</a></p>
-
-<p><a href="http://www.thinkoutsidetheslide.com/choosing-colors-for-your-presentation-slides/">Colors Slides</a></p>
-
-<h3 id="linux--hpc">Linux &amp; HPC</h3>
-
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-centos-6">How To Set Up an NFS Mount</a></p>
-
-<p><a href="https://help.ubuntu.com/community/SettingUpNFSHowTo">SettingUpNFSHowTo</a></p>
-
-<p><a href="http://unix.stackexchange.com/questions/60574/determining-cause-of-linux-kernel-panic">Determining cause of Linux kernel panic</a></p>
-
-<p><a href="http://www.webstreet.com/super_computer.htm">Building Your Own Super Computer</a></p>
-
-<p><a href="https://developer.nvidia.com/how-to-cuda-c-cpp">CUDA</a></p>
-
-<p><a href="https://docstore.mik.ua/orelly/networking_2ndEd/ssh/ch03_09.htm">Algorithms by SSH</a></p>
-
-<p><a href="https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html">Lustre Best Practices</a></p>
-
-<p><a href="http://users.open-mpi.narkive.com/FIUSC8xH/ompi-users-orte-has-lost-communication">[OMPI users] orte has lost communication</a></p>]]></content><author><name></name></author><category term="resources" /><category term="links" /><summary type="html"><![CDATA[A collection of bookmarks converted links]]></summary></entry><entry><title type="html">Molecular dynamics</title><link href="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/" rel="alternate" type="text/html" title="Molecular dynamics" /><published>2023-08-28T22:35:00+00:00</published><updated>2023-08-28T22:35:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/molecular-dynamics-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/"><![CDATA[<h4 id="md-basics">MD basics</h4>
+<hr />]]></content><author><name></name></author><category term="resources" /><category term="deep-learning," /><category term="machine-learning," /><category term="algorithms" /><summary type="html"><![CDATA[Bookmarks for machine learning, deep learning, LLMs, and computational algorithms.]]></summary></entry><entry><title type="html">Molecular dynamics</title><link href="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/" rel="alternate" type="text/html" title="Molecular dynamics" /><published>2023-08-28T22:35:00+00:00</published><updated>2023-08-28T22:35:00+00:00</updated><id>https://biopzhang.github.io/blog/2023/molecular-dynamics-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/molecular-dynamics-links/"><![CDATA[<h3 id="md-basics">MD Basics</h3>
 <ul>
     <li><a href="https://people.chem.umass.edu/jchenlab/mdref.html">Jianhan's recommendations</a></li>
     <li><a href="http://www.chem1.com/acad/webtext/thermeq/index.html">Thermodynamics of chemical equilibrium</a></li>
@@ -78,7 +118,7 @@
 
 <hr />
 
-<h4 id="docking">Docking</h4>
+<h3 id="docking">Docking</h3>
 <ul>
     <li><a href="https://www.pyrosetta.org/">Rosetta</a></li>
     <li><a href="https://ccsb.scripps.edu/projects/docking/">AutoDock</a></li>
@@ -86,7 +126,7 @@
 
 <hr />
 
-<h4 id="visualization-and-analyses">Visualization and analyses</h4>
+<h3 id="visualization-and-analyses">Visualization and analyses</h3>
 <ul>
     <li><a href="https://skblnw.github.io/mkvmd_render/">How to make images for publication using VMD</a></li>
     <li><a href="http://www.mi.fu-berlin.de/w/CompMolBio/MDTricks">Nifty MD tricks</a></li>
@@ -94,7 +134,7 @@
 
 <hr />
 
-<h4 id="databases-and-servers">Databases and servers</h4>
+<h3 id="databases-and-servers">Databases and servers</h3>
 <ul>
     <li><a href="https://proteinensemble.org/">Protein Ensemble Database (IDPs)</a></li>
     <li><a href="https://proteopedia.org/wiki/index.php/Intrinsically_Disordered_Protein">IDP</a></li>
@@ -103,7 +143,7 @@
     <li><a href="http://www.pondr.com/">PONDR</a></li>
     <li><a href="https://www.bmb.colostate.edu/cdpro/">CDPro</a></li>
     <li><a href="http://www.sbg.bio.ic.ac.uk/~phyre2/PD2_ca2main/">PD2 ca2main</a></li>
-    <li><a href="https://www.ebi.ac.uk/Tools/msa/clustalo/"> Multi-sequence alignment: Clustal Omega</a></li>
+    <li><a href="https://www.ebi.ac.uk/Tools/msa/clustalo/">Multi-sequence alignment: Clustal Omega</a></li>
     <li><a href="http://calcium.uhnres.utoronto.ca/ctdb/ctdb/motifs/b1814_subclass_align.html">Calmodulin Target Database</a></li>
     <li><a href="https://www.basissetexchange.org/">QM basis set</a></li>
     <li><a href="https://fossies.org/dox/gromacs-2018.3/idef_8h.html#ac791b66a82093c303b1b2aaf4f185edea44ee4500e2031b8a5fc52b4f25e81780">GROMACS topology</a></li>
@@ -111,30 +151,65 @@
 
 <hr />
 
-<h4 id="md-packages">MD packages</h4>
+<h3 id="md-packages">MD packages</h3>
 <ul>
     <li><a href="https://ambermd.org/tutorials/">AMBER</a></li>
     <li><a href="https://tutorials.gromacs.org/">GROM</a></li>
     <li><a href="https://dasher.wustl.edu/tinker/">Tinker</a></li>
-</ul>]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links" /><summary type="html"><![CDATA[A collection of links on molecular dynamics]]></summary></entry><entry><title type="html">Useful links on bioinformatics</title><link href="https://biopzhang.github.io/blog/2023/useful-links/" rel="alternate" type="text/html" title="Useful links on bioinformatics" /><published>2023-08-24T16:40:16+00:00</published><updated>2023-08-24T16:40:16+00:00</updated><id>https://biopzhang.github.io/blog/2023/useful-links</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/useful-links/"><![CDATA[<h3 id="visualization">Visualization</h3>
-<ul>
-    <li><a href="https://huygens.science.uva.nl/VolcaNoseR">Volcano</a></li>
-    <li><a href="https://software.broadinstitute.org/morpheus">Heatmap</a></li>
 </ul>
 
 <hr />
 
-<h3 id="dimension-reduction">Dimension reduction</h3>
+<h3 id="other-professional--md-tools">Other Professional &amp; MD Tools</h3>
 <ul>
-    <li><a href="https://ordination.okstate.edu/PCA.htm">PCA</a></li>
-    <li><a href="http://strata.uga.edu/6370/lecturenotes/principalComponents.html">PCA</a></li>
-    <li><a href="https://pair-code.github.io/understanding-umap">UMAP</a></li>
+    <li><a href="https://arpa-h.gov/news-and-events">ARPA-H</a></li>
+    <li><a href="http://ambermd.org/tutorials/advanced/tutorial9/#home">Amber tutorial - Protein Ligand binding free energies</a></li>
+    <li><a href="http://www.scbdd.com/rdk_desc/index/">Index-RDKIt-desc-Chemdes-ChemDes-Molecular descriptors computing platform</a></li>
+    <li><a href="https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html">Daylight Theory: SMILES</a></li>
+    <li><a href="https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.bipartite.centrality.betweenness_centrality.html#networkx.algorithms.bipartite.centrality.betweenness_centrality">networkx.algorithms.bipartite.centrality.betweenness_centrality — NetworkX 2.6.2 documentation</a></li>
+    <li><a href="http://thegrantlab.org/bio3d_v2/tutorials/protein-structure-networks#fn:1">Protein Structure Networks</a></li>
+    <li><a href="https://singularity-tutorial.github.io/00-introduction/">Singularity-tutorial.github.io</a></li>
+    <li><a href="https://upjv.q4md-forcefieldtools.org/REDServer-Development/">RESP ESP charge Derive Server Development: R.E.D. Server Development</a></li>
+</ul>
+
+<hr />]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links," /><category term="molecular-dynamics" /><summary type="html"><![CDATA[A collection of links on molecular dynamics]]></summary></entry><entry><title type="html">Bioinformatics &amp;amp; Biology Resources</title><link href="https://biopzhang.github.io/blog/2023/bioinformatics-resources/" rel="alternate" type="text/html" title="Bioinformatics &amp;amp; Biology Resources" /><published>2023-08-24T16:40:16+00:00</published><updated>2023-08-24T16:40:16+00:00</updated><id>https://biopzhang.github.io/blog/2023/bioinformatics-resources</id><content type="html" xml:base="https://biopzhang.github.io/blog/2023/bioinformatics-resources/"><![CDATA[<h3 id="rna-seq--single-cell-analysis">RNA-Seq &amp; Single Cell Analysis</h3>
+<ul>
+    <li><a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.html">Visualization of RNA-Seq results with Volcano Plot</a></li>
+    <li><a href="https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/hi-c-3c-seq-capture-c.html">Hi-C/3C-Seq/Capture-C</a></li>
+    <li><a href="https://stats.stackexchange.com/questions/398734/how-can-t-sne-or-umap-embed-new-test-data-given-that-they-are-nonparametric">r - How can t-SNE or UMAP embed new (test) data, given that they are nonparametric? - Cross Validated</a></li>
+    <li><a href="https://github.com/salzmanlab/SICILIAN">salzmanlab/SICILIAN</a></li>
+    <li><a href="https://scilifelab.github.io/courses/rnaseq/labs/kallisto">Kallisto and Sleuth - SciLifeLab Courses</a></li>
+    <li><a href="https://www.genecards.org/">GeneCards - Human Genes | Gene Database | Gene Search</a></li>
+    <li><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC A Quality Control tool for High Throughput Sequence Data</a></li>
+    <li><a href="https://www.kallistobus.tools/">kallisto | bustools</a></li>
+    <li><a href="https://pachterlab.github.io/kallistobustools/tutorials/kb_pseudotime/R/monocle2/kb_monocle2/?h=bulk#cell-type-inference">R - kallisto | bustools</a></li>
+    <li><a href="https://kb.10xgenomics.com/hc/en-us/articles/360043386291-How-to-format-v1-chemistry-datasets-to-work-with-current-Cell-Ranger-versions-">How to format v1 chemistry datasets to work with current Cell Ranger versions? – 10X Genomics</a></li>
+    <li><a href="https://www.science.smith.edu/cmbs/wp-content/uploads/sites/36/2015/09/P-and-q-values-in-RNA-Seq.pdf">Microsoft Word - P and q values in RNA Seq.docx</a></li>
+    <li><a href="https://bioconductor.org/books/3.13/OSCA.basic/marker-detection.html#motivation-2">Chapter 6 Marker gene detection | Basics of Single-Cell Analysis with Bioconductor</a></li>
+    <li><a href="http://cole-trapnell-lab.github.io/monocle-release/docs/#analyzing-branches-in-single-cell-trajectories">Monocle</a></li>
+    <li><a href="https://github.com/velocyto-team/velocyto-notebooks/blob/master/python/DentateGyrus.ipynb">velocyto-notebooks/DentateGyrus.ipynb at master · velocyto-team/velocyto-notebooks</a></li>
+    <li><a href="https://www.sc-best-practices.org/spatial/deconvolution.html#id549">30. Spatial deconvolution — Single-cell best practices</a></li>
+    <li><a href="https://epicore.med.cornell.edu/pricelist.php">Epigenomics Core @ WCMC</a></li>
+    <li><a href="https://satijalab.org/seurat/articles/multimodal_reference_mapping">Analysis, visualization, and integration of Visium HD spatial datasets with Seurat • Seurat</a></li>
+    <li><a href="https://www.10xgenomics.com/analysis-guides/segmentation-visium-hd">Visium HD to cell</a></li>
+    <li><a href="https://www.10xgenomics.com/analysis-guides/he-to-xenium-dapi-image-registration-with-fiji">H&amp;E to Xenium DAPI Image Registration with Fiji - 10x Genomics</a></li>
+    <li><a href="http://bioconductor.org/books/3.14/OSCA.advanced/">Single cell analysis with bioconductor</a></li>
+</ul>
+
+<hr />
+
+<h3 id="biology-references">Biology References</h3>
+<ul>
+    <li><a href="http://book.bionumbers.org/how-fast-do-rnas-and-proteins-degrade/#:~:text=The%20results%20showed%20that%20most,components%20are%20replenished%20much%20faster.">» How fast do RNAs and proteins degrade?</a></li>
+    <li><a href="https://www.nature.com/collections/hctjdrbntb">mRNA splicing: 40 years on</a></li>
+    <li><a href="https://www.fda.gov/medical-devices/in-vitro-diagnostics/precision-medicine">Precision Medicine | FDA</a></li>
+    <li><a href="https://www.mdanderson.org/cancerwise/what-is-tumor-infiltrating-lymphocyte-til-therapy--6-things-to-know.h00-159460056.html">What is tumor-infiltrating lymphocyte (TIL) therapy? | MD Anderson Cancer Center</a></li>
+    <li><a href="https://www.cellimagelibrary.org/browse/celltype">Cell Image Library</a></li>
 </ul>
 
 <hr />
 
 <h3 id="bioinformatics">Bioinformatics</h3>
-<h4 id="protein">Protein</h4>
 <ul>
     <li><a href="https://www.biostars.org/p/126011">COG assignment using COGNITOR</a></li>
     <li><a href="http://www.cathdb.info/">CATH</a></li>
@@ -142,7 +217,4 @@
     <li><a href="https://github.com/smith-chem-wisc/MetaMorpheus/wiki">MetaMorpheus</a></li>
 </ul>
 
-<h4 id="single-cell-analyses">Single cell analyses</h4>
-<ul>
-    <li><a href="http://bioconductor.org/books/3.14/OSCA.advanced/">Single cell analysis with bioconductor</a></li>
-</ul>]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="links" /><summary type="html"><![CDATA[A collection of links]]></summary></entry></feed>
+<hr />]]></content><author><name></name></author><category term="resources" /><category term="knowledge," /><category term="bioinformatics," /><category term="biology" /><summary type="html"><![CDATA[A comprehensive collection of bioinformatics and biology database links and tools.]]></summary></entry></feed>
