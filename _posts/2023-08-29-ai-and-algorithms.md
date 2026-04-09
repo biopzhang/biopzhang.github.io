@@ -3,7 +3,6 @@ layout: post
 title: AI, Deep Learning & Algorithms
 date: 2023-08-29 21:48:00
 description: Bookmarks for machine learning, deep learning, LLMs, and computational algorithms.
-tags: deep-learning, machine-learning, algorithms
 categories: resources
 ---
 

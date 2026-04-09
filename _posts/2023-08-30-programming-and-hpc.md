@@ -3,7 +3,6 @@ layout: post
 title: Programming, Python & HPC
 date: 2023-08-30 09:00:00
 description: Programming guides, Python techniques, and Linux/HPC setups.
-tags: python, hpc, programming
 categories: resources
 ---
 

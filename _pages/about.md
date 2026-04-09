@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 description: ''
-nav: true
+nav: false
 nav_order: null
 profile:
   address: <p>Houston Methodist Research Institute</p> <p>6670 Bertner Ave</p> <p>Houston, TX 77030</p>
@@ -11,9 +11,9 @@ profile:
   image: prof_pic.jpg
   align: right
 subtitle: <a href="https://www.researchgate.net/profile/Pengzhi-Zhang-2">Researcher</a>.
-news: true
-latest_posts: true
-selected_papers: true
+news: false
+latest_posts: false
+selected_papers: false
 social: true
 ---
 
