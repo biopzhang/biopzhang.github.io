@@ -681,6 +681,26 @@ footer.sticky-bottom {
   border-color: var(--global-text-color);
 }
 
+html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=legend i],
+html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=tooltip i],
+html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=popover i],
+html[data-theme=dark] .publications [class*=dimensions i][class*=legend i],
+html[data-theme=dark] .publications [class*=dimensions i][class*=tooltip i],
+html[data-theme=dark] .publications [class*=dimensions i][class*=popover i] {
+  background: var(--global-card-bg-color) !important;
+  border: 1px solid var(--global-divider-color) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+  color: var(--global-text-color) !important;
+}
+html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=legend i] *,
+html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=tooltip i] *,
+html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=popover i] *,
+html[data-theme=dark] .publications [class*=dimensions i][class*=legend i] *,
+html[data-theme=dark] .publications [class*=dimensions i][class*=tooltip i] *,
+html[data-theme=dark] .publications [class*=dimensions i][class*=popover i] * {
+  color: var(--global-text-color) !important;
+}
+
 figure.highlight {
   margin: 0 0 1rem;
 }
