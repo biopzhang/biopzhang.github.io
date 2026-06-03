@@ -358,11 +358,11 @@ Social links are defined in the config. Set any to your username/ID to display t
 
 ```yaml
 github_username: biopzhang
-twitter_username: robinustc
-linkedin_username: pengzhi-zhang-69534536
-scholar_userid: r5NbsgYAAAAJ
-orcid_id: 0000-0001-6920-1490
-research_gate_profile: Pengzhi-Zhang-2
+twitter_username: xxx
+linkedin_username: xxx
+scholar_userid: xxx
+orcid_id: xxx
+research_gate_profile: xxx
 ```
 
 ---
