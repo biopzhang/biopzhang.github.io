@@ -548,7 +548,8 @@
           sha: null,
           dirty: false,
           branch: sessionStorage.getItem(branchKey) || "",
-          branchCandidates: []
+          branchCandidates: [],
+          branchWarning: ""
         };
 
         var els = {
@@ -669,18 +670,23 @@
 
             function tryBranch(index) {
               if (index >= candidates.length) {
-                throw new Error(
-                  "Could not find " +
-                    SOURCE_PROBE_FILE +
-                    " on " +
-                    candidates.join(", ") +
-                    ". Check that the token can read repository contents and that the source branch is included."
-                );
+                state.branch = candidates[0] || BRANCH;
+                state.branchWarning =
+                  "Could not verify " +
+                  SOURCE_PROBE_FILE +
+                  " on " +
+                  candidates.join(", ") +
+                  ". Using branch " +
+                  state.branch +
+                  "; page files may fail to load until _pages/ is restored on GitHub.";
+                sessionStorage.setItem(branchKey, state.branch);
+                return Promise.resolve(state.branch);
               }
 
               return api(contentEndpoint(SOURCE_PROBE_FILE, candidates[index]))
                 .then(function () {
                   state.branch = candidates[index];
+                  state.branchWarning = "";
                   sessionStorage.setItem(branchKey, state.branch);
                   return state.branch;
                 })
@@ -999,7 +1005,10 @@
           els.account.textContent = state.user ? "Connected as " + state.user.login + " · " + sourceBranch() : "Connected";
           renderTargets();
           loadCollections()
-            .then(chooseInitialTarget)
+            .then(function () {
+              chooseInitialTarget();
+              if (state.branchWarning) setStatus(els.saveStatus, state.branchWarning, "error");
+            })
             .catch(function (error) {
               setStatus(els.saveStatus, "Could not load collections: " + error.message, "error");
               chooseInitialTarget();
