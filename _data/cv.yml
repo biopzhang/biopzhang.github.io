@@ -20,9 +20,15 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research Scientist 
+      institution: Zhejiang University
+      year: 2026 - present
+      description:
+        - Digital pathology
+        - multi-omics 
     - title: Research Associate 
       institution: Houston Methodist Research Institute
-      year: 2022 - present
+      year: 2022 - 2026
       description:
         - Algorithm development for single-cell RNA-seq analysis 
         - Spatial transcriptomics analysis using deep learning
