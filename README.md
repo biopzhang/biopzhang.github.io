@@ -53,6 +53,7 @@ The site will be available at **http://127.0.0.1:4000**.
 
 ---
 
+
 ## Site Structure Overview
 
 ```
@@ -365,22 +366,3 @@ orcid_id: xxx
 research_gate_profile: xxx
 ```
 
----
-
-## Deployment
-
-The site auto-deploys to GitHub Pages on every push to `master` via GitHub Actions.
-
-1. Make your changes and commit.
-2. Push to `master`.
-3. GitHub Actions builds and deploys to the `gh-pages` branch.
-4. The site updates at [https://biopzhang.github.io](https://biopzhang.github.io) within a few minutes.
-
-You can monitor deploys under the **Actions** tab in the GitHub repository.
-
----
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](LICENSE).
-Based on the [al-folio](https://github.com/alshedivat/al-folio) theme.
