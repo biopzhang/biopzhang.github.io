@@ -21,6 +21,13 @@ baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
+# Browser-based content editor. Public pages stay unauthenticated; this only
+# adds a separate CMS entry point at /admin/.
+cms:
+  enabled: true
+  path: /admin/
+  label: Edit
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
@@ -205,6 +212,7 @@ kramdown:
 include: ['_pages']
 exclude:
   - bin
+  - edit_token.txt
   - Gemfile
   - Gemfile.lock
   - vendor

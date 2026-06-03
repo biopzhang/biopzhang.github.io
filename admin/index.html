@@ -1,12 +1,1085 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Edit Site</title>
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --panel: #ffffff;
+        --panel-muted: #f8fafc;
+        --border: #d8dee9;
+        --text: #1f2937;
+        --muted: #667085;
+        --accent: #1769aa;
+        --accent-dark: #0f4f82;
+        --danger: #b42318;
+        --success: #067647;
+        --shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background: var(--bg);
+        font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .login {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .login-panel {
+        width: min(520px, 100%);
+        padding: 28px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+
+      .login-panel h1,
+      .workspace-title h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      .login-panel p,
+      .workspace-title p,
+      .source-help,
+      .status {
+        color: var(--muted);
+      }
+
+      .token-row {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .token-row label {
+        font-weight: 600;
+      }
+
+      .token-row input,
+      .commit-input,
+      .editor {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        background: #ffffff;
+        color: var(--text);
+      }
+
+      .token-row input,
+      .commit-input {
+        height: 40px;
+        padding: 0 12px;
+      }
+
+      .primary,
+      .secondary,
+      .plain {
+        min-height: 36px;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        padding: 0 12px;
+        font-weight: 600;
+      }
+
+      .primary {
+        color: #ffffff;
+        background: var(--accent);
+      }
+
+      .primary:hover {
+        background: var(--accent-dark);
+      }
+
+      .secondary {
+        color: var(--accent);
+        background: #eef6fc;
+        border-color: #b9d7ec;
+      }
+
+      .plain {
+        color: var(--text);
+        background: #ffffff;
+        border-color: var(--border);
+      }
+
+      .primary:disabled,
+      .secondary:disabled,
+      .plain:disabled {
+        cursor: not-allowed;
+        opacity: 0.58;
+      }
+
+      .app {
+        min-height: 100vh;
+        display: none;
+        grid-template-columns: 320px minmax(0, 1fr);
+      }
+
+      .sidebar {
+        padding: 18px;
+        background: #ffffff;
+        border-right: 1px solid var(--border);
+        overflow: auto;
+      }
+
+      .sidebar-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .account {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .target-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .target-button {
+        width: 100%;
+        padding: 10px 12px;
+        text-align: left;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+
+      .target-button:hover,
+      .target-button.active {
+        border-color: var(--accent);
+        background: #f0f7fc;
+      }
+
+      .target-button strong {
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      .target-button span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .workspace {
+        min-width: 0;
+        display: grid;
+        grid-template-rows: auto minmax(260px, 36vh) auto minmax(320px, 1fr);
+      }
+
+      .topbar,
+      .source-bar,
+      .editor-bar {
+        background: var(--panel);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 18px;
+      }
+
+      .top-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      .preview-frame {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #ffffff;
+      }
+
+      .source-bar {
+        padding: 12px 18px;
+      }
+
+      .source-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      .source-title strong {
+        font-size: 13px;
+      }
+
+      .file-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .file-button {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 6px 10px;
+        background: #ffffff;
+      }
+
+      .file-button.active {
+        color: #ffffff;
+        background: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .editor-bar {
+        display: grid;
+        gap: 10px;
+        padding: 12px 18px;
+      }
+
+      .path-row,
+      .save-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .path-chip {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        padding: 4px 9px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        background: var(--panel-muted);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 12px;
+        overflow-wrap: anywhere;
+      }
+
+      .commit-input {
+        flex: 1;
+        min-width: 180px;
+      }
+
+      .editor-wrap {
+        min-height: 0;
+        padding: 18px;
+      }
+
+      .editor {
+        display: block;
+        height: 100%;
+        min-height: 320px;
+        padding: 14px;
+        resize: none;
+        font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        white-space: pre;
+      }
+
+      .status {
+        min-height: 20px;
+      }
+
+      .status.error {
+        color: var(--danger);
+      }
+
+      .status.success {
+        color: var(--success);
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      @media (max-width: 920px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          border-right: 0;
+          border-bottom: 1px solid var(--border);
+        }
+
+        .workspace {
+          grid-template-rows: auto 300px auto minmax(360px, 1fr);
+        }
+
+        .topbar,
+        .path-row,
+        .save-row {
+          align-items: stretch;
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- Include the Sveltia CMS script (Zero-setup substitute for Decap CMS) -->
-    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <main id="login" class="login">
+      <section class="login-panel">
+        <h1>Edit Site</h1>
+        <p>Enter a GitHub token with repository contents access for <strong>biopzhang/biopzhang.github.io</strong>.</p>
+        <form id="login-form" class="token-row">
+          <label for="token">GitHub token</label>
+          <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_..." />
+          <button class="primary" type="submit">Login</button>
+          <div id="login-status" class="status" role="status"></div>
+        </form>
+      </section>
+    </main>
+
+    <main id="app" class="app">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div>
+            <strong>Website Pages</strong>
+            <div id="account" class="account"></div>
+          </div>
+          <button id="logout" class="plain" type="button">Logout</button>
+        </div>
+        <nav id="target-list" class="target-list" aria-label="Editable site pages"></nav>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div class="workspace-title">
+            <h1 id="page-title">Choose a page</h1>
+            <p id="page-description"></p>
+          </div>
+          <div class="top-actions">
+            <a id="open-page" class="secondary" href="/" target="_blank" rel="noopener">Open page</a>
+            <a id="open-github" class="plain hidden" href="#" target="_blank" rel="noopener">Open file on GitHub</a>
+          </div>
+        </header>
+
+        <iframe id="preview" class="preview-frame" title="Current website page preview"></iframe>
+
+        <section class="source-bar">
+          <div class="source-title">
+            <strong>Source files for this page</strong>
+            <div>
+              <button id="new-post" class="secondary hidden" type="button">New post</button>
+              <button id="new-news" class="secondary hidden" type="button">New announcement</button>
+            </div>
+          </div>
+          <div id="file-buttons" class="file-buttons"></div>
+          <p id="source-help" class="source-help"></p>
+        </section>
+
+        <section class="editor-bar">
+          <div class="path-row">
+            <span id="file-path" class="path-chip">No file selected</span>
+            <span id="save-status" class="status" role="status"></span>
+          </div>
+          <div class="save-row">
+            <input id="commit-message" class="commit-input" type="text" value="Update site content from editor" />
+            <button id="reload-file" class="plain" type="button" disabled>Reload</button>
+            <button id="save-file" class="primary" type="button" disabled>Save to GitHub</button>
+          </div>
+        </section>
+
+        <div class="editor-wrap">
+          <textarea id="editor" class="editor" spellcheck="false" disabled placeholder="Select a source file to edit."></textarea>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        var REPO = "biopzhang/biopzhang.github.io";
+        var OWNER = "biopzhang";
+        var BRANCH = "master";
+        var SOURCE_PROBE_FILE = "_pages/about.md";
+        var API_ROOT = "https://api.github.com/repos/" + REPO;
+        var tokenKey = "biopzhang_site_editor_token";
+        var branchKey = "biopzhang_site_editor_branch";
+
+        var targets = [
+          {
+            id: "home",
+            label: "Home / About",
+            url: "/",
+            description: "Main landing page text and homepage options.",
+            files: [
+              {
+                path: "_pages/about.md",
+                label: "Home page",
+                help: "Edit the homepage profile text and front matter options in this Markdown file."
+              }
+            ]
+          },
+          {
+            id: "publications",
+            label: "Publications",
+            url: "/publications/",
+            description: "The visible Publications page is generated from BibTeX entries.",
+            files: [
+              {
+                path: "_bibliography/papers.bib",
+                label: "Publication entries",
+                help: "Add or update BibTeX entries here. This is the main source for the Publications page."
+              },
+              {
+                path: "_pages/publications.md",
+                label: "Page settings",
+                help: "Use this only for page settings, such as the years shown on the Publications page."
+              }
+            ]
+          },
+          {
+            id: "cv",
+            label: "CV",
+            url: "/cv/",
+            description: "The CV page is rendered from structured YAML plus a small page shell.",
+            files: [
+              {
+                path: "_data/cv.yml",
+                label: "CV entries",
+                help: "Edit education, experience, and other CV sections here. Indentation matters in YAML."
+              },
+              {
+                path: "_pages/cv.md",
+                label: "CV page settings",
+                help: "Use this for the CV page title, URL, and linked PDF filename."
+              }
+            ]
+          },
+          {
+            id: "news",
+            label: "News",
+            url: "/news/",
+            description: "Announcements shown in the News section.",
+            collection: "_news",
+            files: []
+          },
+          {
+            id: "posts",
+            label: "Links / Posts",
+            url: "/blog/",
+            description: "Resource posts shown under Links.",
+            collection: "_posts",
+            files: []
+          },
+          {
+            id: "teaching",
+            label: "Teaching",
+            url: "/teaching/",
+            description: "Teaching page content.",
+            files: [
+              {
+                path: "_pages/teaching.md",
+                label: "Teaching page",
+                help: "Edit the Teaching page Markdown source."
+              }
+            ]
+          },
+          {
+            id: "repositories",
+            label: "Repositories",
+            url: "/repositories/",
+            description: "Repository page and repository data.",
+            files: [
+              {
+                path: "_data/repositories.yml",
+                label: "Repository list",
+                help: "Edit the repository list shown on the page."
+              },
+              {
+                path: "_pages/repositories.md",
+                label: "Page settings",
+                help: "Use this for the Repositories page title and display settings."
+              }
+            ]
+          },
+          {
+            id: "site",
+            label: "Site settings",
+            url: "/",
+            description: "Global site settings, navigation labels, social links, and feature toggles.",
+            files: [
+              {
+                path: "_config.yml",
+                label: "Site config",
+                help: "Edit global Jekyll settings. Rebuilds may be needed before changes are visible."
+              }
+            ]
+          }
+        ];
+
+        var state = {
+          token: sessionStorage.getItem(tokenKey) || "",
+          user: null,
+          selectedTarget: null,
+          selectedFile: null,
+          content: "",
+          sha: null,
+          dirty: false,
+          branch: sessionStorage.getItem(branchKey) || "",
+          branchCandidates: []
+        };
+
+        var els = {
+          login: document.getElementById("login"),
+          app: document.getElementById("app"),
+          loginForm: document.getElementById("login-form"),
+          token: document.getElementById("token"),
+          loginStatus: document.getElementById("login-status"),
+          account: document.getElementById("account"),
+          logout: document.getElementById("logout"),
+          targetList: document.getElementById("target-list"),
+          pageTitle: document.getElementById("page-title"),
+          pageDescription: document.getElementById("page-description"),
+          openPage: document.getElementById("open-page"),
+          openGithub: document.getElementById("open-github"),
+          preview: document.getElementById("preview"),
+          fileButtons: document.getElementById("file-buttons"),
+          sourceHelp: document.getElementById("source-help"),
+          newPost: document.getElementById("new-post"),
+          newNews: document.getElementById("new-news"),
+          filePath: document.getElementById("file-path"),
+          saveStatus: document.getElementById("save-status"),
+          commitMessage: document.getElementById("commit-message"),
+          reloadFile: document.getElementById("reload-file"),
+          saveFile: document.getElementById("save-file"),
+          editor: document.getElementById("editor")
+        };
+
+        function setStatus(el, message, kind) {
+          el.textContent = message || "";
+          el.classList.remove("error", "success");
+          if (kind) el.classList.add(kind);
+        }
+
+        function githubRequest(url, options) {
+          var request = options || {};
+          request.headers = Object.assign(
+            {
+              Accept: "application/vnd.github+json",
+              Authorization: "Bearer " + state.token,
+              "X-GitHub-Api-Version": "2022-11-28"
+            },
+            request.headers || {}
+          );
+          return fetch(url, request).then(function (response) {
+            return response.text().then(function (text) {
+              var data = text ? JSON.parse(text) : null;
+              if (!response.ok) {
+                var message = data && data.message ? data.message : response.statusText;
+                var error = new Error(message);
+                error.status = response.status;
+                error.data = data;
+                throw error;
+              }
+              return data;
+            });
+          });
+        }
+
+        function api(path, options) {
+          return githubRequest(API_ROOT + path, options);
+        }
+
+        function encodeContentPath(path) {
+          return encodeURIComponent(path).replace(/%2F/g, "/");
+        }
+
+        function contentEndpoint(path, branch) {
+          return "/contents/" + encodeContentPath(path) + "?ref=" + encodeURIComponent(branch || state.branch || BRANCH);
+        }
+
+        function unique(values) {
+          return values.filter(function (value, index, array) {
+            return value && array.indexOf(value) === index;
+          });
+        }
+
+        function sourceBranch() {
+          return state.branch || BRANCH;
+        }
+
+        function base64ToText(base64) {
+          var binary = atob(base64.replace(/\n/g, ""));
+          var bytes = new Uint8Array(binary.length);
+          for (var i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+          return new TextDecoder().decode(bytes);
+        }
+
+        function textToBase64(text) {
+          var bytes = new TextEncoder().encode(text);
+          var binary = "";
+          var chunkSize = 0x8000;
+          for (var i = 0; i < bytes.length; i += chunkSize) {
+            var chunk = bytes.subarray(i, i + chunkSize);
+            binary += String.fromCharCode.apply(null, chunk);
+          }
+          return btoa(binary);
+        }
+
+        function siteUrl(path) {
+          return new URL(path, window.location.origin).href;
+        }
+
+        function githubFileUrl(path) {
+          return "https://github.com/" + REPO + "/blob/" + sourceBranch() + "/" + path;
+        }
+
+        function branchCandidates(defaultBranch) {
+          var urlBranch = new URLSearchParams(window.location.search).get("branch");
+          return unique([urlBranch, state.branch, BRANCH, "main", defaultBranch]);
+        }
+
+        function detectSourceBranch() {
+          setStatus(els.loginStatus, "Finding source branch...");
+          return api("").then(function (repo) {
+            var candidates = branchCandidates(repo.default_branch);
+            state.branchCandidates = candidates;
+
+            function tryBranch(index) {
+              if (index >= candidates.length) {
+                throw new Error(
+                  "Could not find " +
+                    SOURCE_PROBE_FILE +
+                    " on " +
+                    candidates.join(", ") +
+                    ". Check that the token can read repository contents and that the source branch is included."
+                );
+              }
+
+              return api(contentEndpoint(SOURCE_PROBE_FILE, candidates[index]))
+                .then(function () {
+                  state.branch = candidates[index];
+                  sessionStorage.setItem(branchKey, state.branch);
+                  return state.branch;
+                })
+                .catch(function (error) {
+                  if (error.status === 404) return tryBranch(index + 1);
+                  throw error;
+                });
+            }
+
+            return tryBranch(0);
+          });
+        }
+
+        function collectionLabel(path) {
+          return path.split("/").pop().replace(/\.md$/, "");
+        }
+
+        function slugify(value) {
+          return value
+            .toLowerCase()
+            .trim()
+            .replace(/['"]/g, "")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "")
+            .slice(0, 80);
+        }
+
+        function today() {
+          var date = new Date();
+          var year = date.getFullYear();
+          var month = String(date.getMonth() + 1).padStart(2, "0");
+          var day = String(date.getDate()).padStart(2, "0");
+          return year + "-" + month + "-" + day;
+        }
+
+        function renderTargets() {
+          els.targetList.innerHTML = "";
+          targets.forEach(function (target) {
+            var button = document.createElement("button");
+            button.type = "button";
+            button.className = "target-button" + (state.selectedTarget && state.selectedTarget.id === target.id ? " active" : "");
+            button.innerHTML = "<strong></strong><span></span>";
+            button.querySelector("strong").textContent = target.label;
+            button.querySelector("span").textContent = target.url;
+            button.addEventListener("click", function () {
+              selectTarget(target, null);
+            });
+            els.targetList.appendChild(button);
+          });
+        }
+
+        function renderFiles() {
+          var target = state.selectedTarget;
+          els.fileButtons.innerHTML = "";
+          els.newPost.classList.toggle("hidden", !target || target.id !== "posts");
+          els.newNews.classList.toggle("hidden", !target || target.id !== "news");
+
+          if (!target) return;
+
+          target.files.forEach(function (file) {
+            var button = document.createElement("button");
+            button.type = "button";
+            button.className = "file-button" + (state.selectedFile && state.selectedFile.path === file.path ? " active" : "");
+            button.textContent = file.label || collectionLabel(file.path);
+            button.addEventListener("click", function () {
+              selectFile(file);
+            });
+            els.fileButtons.appendChild(button);
+          });
+        }
+
+        function updatePageView() {
+          var target = state.selectedTarget;
+          renderTargets();
+          renderFiles();
+
+          if (!target) return;
+
+          els.pageTitle.textContent = target.label;
+          els.pageDescription.textContent = target.description;
+          els.openPage.href = siteUrl(target.url);
+          els.preview.src = siteUrl(target.url);
+        }
+
+        function setEditorReady(ready) {
+          els.editor.disabled = !ready;
+          els.reloadFile.disabled = !ready;
+          els.saveFile.disabled = !ready;
+        }
+
+        function selectTarget(target, preferredPath) {
+          if (state.dirty && !window.confirm("Discard unsaved edits and switch pages?")) return;
+          state.selectedTarget = target;
+          state.selectedFile = null;
+          state.content = "";
+          state.sha = null;
+          state.dirty = false;
+          els.editor.value = "";
+          els.filePath.textContent = "No file selected";
+          els.sourceHelp.textContent = target.collection ? "Choose an existing item or create a new one." : "";
+          els.openGithub.classList.add("hidden");
+          setStatus(els.saveStatus, "");
+          setEditorReady(false);
+          updatePageView();
+
+          if (!target.files.length) return;
+
+          var file = preferredPath
+            ? target.files.find(function (item) {
+                return item.path === preferredPath;
+              })
+            : target.files[0];
+          if (file) selectFile(file);
+        }
+
+        function selectFile(file) {
+          if (state.dirty && !window.confirm("Discard unsaved edits and load another file?")) return;
+          state.selectedFile = file;
+          state.dirty = false;
+          els.filePath.textContent = file.path;
+          els.sourceHelp.textContent = file.help || "";
+          els.openGithub.href = githubFileUrl(file.path);
+          els.openGithub.classList.remove("hidden");
+          setStatus(els.saveStatus, "Loading " + file.path + "...");
+          setEditorReady(false);
+          renderFiles();
+          loadFile(file.path);
+        }
+
+        function loadFile(path) {
+          api(contentEndpoint(path))
+            .then(function (data) {
+              state.sha = data.sha;
+              state.content = base64ToText(data.content || "");
+              els.editor.value = state.content;
+              state.dirty = false;
+              setEditorReady(true);
+              setStatus(els.saveStatus, "Loaded.", "success");
+            })
+            .catch(function (error) {
+              var detail =
+                error.status === 404
+                  ? "Could not load " +
+                    path +
+                    " from branch " +
+                    sourceBranch() +
+                    ". Tried source branches: " +
+                    (state.branchCandidates.length ? state.branchCandidates.join(", ") : sourceBranch()) +
+                    "."
+                  : "Could not load file: " + error.message;
+              setStatus(els.saveStatus, detail, "error");
+            });
+        }
+
+        function saveFile() {
+          if (!state.selectedFile) return;
+          var path = state.selectedFile.path;
+          var message = els.commitMessage.value.trim() || "Update " + path + " from site editor";
+          setStatus(els.saveStatus, "Saving to GitHub...");
+          els.saveFile.disabled = true;
+          api("/contents/" + encodeContentPath(path), {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              message: message,
+              branch: sourceBranch(),
+              content: textToBase64(els.editor.value),
+              sha: state.sha || undefined
+            })
+          })
+            .then(function (data) {
+              state.sha = data.content.sha;
+              state.content = els.editor.value;
+              state.dirty = false;
+              els.openGithub.href = githubFileUrl(path);
+              els.openGithub.classList.remove("hidden");
+              setStatus(els.saveStatus, "Saved. GitHub Pages will update after the deploy finishes.", "success");
+            })
+            .catch(function (error) {
+              setStatus(els.saveStatus, "Save failed: " + error.message, "error");
+            })
+            .finally(function () {
+              els.saveFile.disabled = false;
+            });
+        }
+
+        function loadCollection(target) {
+          if (!target.collection) return Promise.resolve();
+          return api(contentEndpoint(target.collection)).then(function (items) {
+            target.files = items
+              .filter(function (item) {
+                return item.type === "file" && item.name.endsWith(".md");
+              })
+              .sort(function (a, b) {
+                return b.name.localeCompare(a.name);
+              })
+              .map(function (item) {
+                return {
+                  path: item.path,
+                  label: collectionLabel(item.path),
+                  help:
+                    target.id === "news"
+                      ? "Edit this announcement Markdown file. The live item appears under /news/."
+                      : "Edit this post Markdown file. The live item appears under /blog/."
+                };
+              });
+          });
+        }
+
+        function loadCollections() {
+          return Promise.all(
+            targets
+              .filter(function (target) {
+                return target.collection;
+              })
+              .map(loadCollection)
+          );
+        }
+
+        function createMarkdownItem(kind) {
+          var title = window.prompt(kind === "news" ? "Announcement title" : "Post title");
+          if (!title) return;
+          var date = today();
+          var slug = slugify(title) || "new-item";
+          var path;
+          var content;
+
+          if (kind === "news") {
+            path = "_news/" + date + "-" + slug + ".md";
+            content =
+              "---\n" +
+              "layout: post\n" +
+              'title: "' +
+              title.replace(/"/g, '\\"') +
+              '"\n' +
+              "date: " +
+              date +
+              "\n" +
+              "inline: false\n" +
+              "---\n\n";
+          } else {
+            path = "_posts/" + date + "-" + slug + ".md";
+            content =
+              "---\n" +
+              "layout: post\n" +
+              'title: "' +
+              title.replace(/"/g, '\\"') +
+              '"\n' +
+              "date: " +
+              date +
+              "\n" +
+              "description: \n" +
+              "tags: \n" +
+              "categories: \n" +
+              "---\n\n";
+          }
+
+          var target = targets.find(function (item) {
+            return item.id === kind;
+          });
+          var file = {
+            path: path,
+            label: collectionLabel(path),
+            help: "New file. Add content, then save it to GitHub."
+          };
+          if (state.dirty && !window.confirm("Discard unsaved edits and create a new file?")) return;
+          target.files.unshift(file);
+          state.selectedTarget = target;
+          state.selectedFile = file;
+          state.sha = null;
+          state.content = content;
+          state.dirty = true;
+          updatePageView();
+          els.editor.value = content;
+          els.filePath.textContent = path;
+          els.sourceHelp.textContent = file.help;
+          els.openGithub.classList.add("hidden");
+          setEditorReady(true);
+          renderFiles();
+          setStatus(els.saveStatus, "New file ready. Save to create it in GitHub.", "success");
+        }
+
+        function inferTargetFromPage() {
+          var page = new URLSearchParams(window.location.search).get("page") || "/";
+          if (page.indexOf("/publications/") === 0) return { target: "publications" };
+          if (page.indexOf("/cv/") === 0) return { target: "cv" };
+          if (page.indexOf("/teaching/") === 0) return { target: "teaching" };
+          if (page.indexOf("/repositories/") === 0) return { target: "repositories" };
+          if (page.indexOf("/news/") === 0) return { target: "news", slug: page.split("/").filter(Boolean).pop() };
+          if (page.indexOf("/blog/") === 0) return { target: "posts", slug: page.split("/").filter(Boolean).pop() };
+          return { target: "home" };
+        }
+
+        function chooseInitialTarget() {
+          var inferred = inferTargetFromPage();
+          var target = targets.find(function (item) {
+            return item.id === inferred.target;
+          });
+          if (!target) target = targets[0];
+
+          var preferredPath = null;
+          if (inferred.slug && target.files.length) {
+            var match = target.files.find(function (file) {
+              return file.path.indexOf(inferred.slug) !== -1;
+            });
+            preferredPath = match ? match.path : null;
+          }
+          selectTarget(target, preferredPath);
+        }
+
+        function showApp() {
+          els.login.style.display = "none";
+          els.app.style.display = "grid";
+          els.account.textContent = state.user ? "Connected as " + state.user.login + " · " + sourceBranch() : "Connected";
+          renderTargets();
+          loadCollections()
+            .then(chooseInitialTarget)
+            .catch(function (error) {
+              setStatus(els.saveStatus, "Could not load collections: " + error.message, "error");
+              chooseInitialTarget();
+            });
+        }
+
+        function login(token) {
+          state.token = token.trim();
+          if (!state.token) {
+            setStatus(els.loginStatus, "Enter a token.", "error");
+            return;
+          }
+          setStatus(els.loginStatus, "Checking token...");
+          fetch("https://api.github.com/user", {
+            headers: {
+              Accept: "application/vnd.github+json",
+              Authorization: "Bearer " + state.token,
+              "X-GitHub-Api-Version": "2022-11-28"
+            }
+          })
+            .then(function (response) {
+              return response.text().then(function (text) {
+                var data = text ? JSON.parse(text) : null;
+                if (!response.ok) throw new Error(data && data.message ? data.message : response.statusText);
+                return data;
+              });
+            })
+            .then(function (user) {
+              state.user = user;
+              sessionStorage.setItem(tokenKey, state.token);
+              return detectSourceBranch();
+            })
+            .then(function () {
+              showApp();
+            })
+            .catch(function (error) {
+              setStatus(els.loginStatus, "Login failed: " + error.message, "error");
+            });
+        }
+
+        els.loginForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          login(els.token.value);
+        });
+
+        els.logout.addEventListener("click", function () {
+          sessionStorage.removeItem(tokenKey);
+          window.location.reload();
+        });
+
+        els.reloadFile.addEventListener("click", function () {
+          if (state.selectedFile) selectFile(state.selectedFile);
+        });
+
+        els.saveFile.addEventListener("click", saveFile);
+
+        els.editor.addEventListener("input", function () {
+          state.dirty = els.editor.value !== state.content;
+          if (state.dirty) setStatus(els.saveStatus, "Unsaved changes.");
+        });
+
+        els.newPost.addEventListener("click", function () {
+          createMarkdownItem("posts");
+        });
+
+        els.newNews.addEventListener("click", function () {
+          createMarkdownItem("news");
+        });
+
+        window.addEventListener("beforeunload", function (event) {
+          if (!state.dirty) return;
+          event.preventDefault();
+          event.returnValue = "";
+        });
+
+        if (state.token) {
+          els.token.value = state.token;
+          login(state.token);
+        }
+      })();
+    </script>
   </body>
 </html>

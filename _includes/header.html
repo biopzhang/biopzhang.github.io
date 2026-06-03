@@ -94,6 +94,11 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              {%- if site.cms.enabled %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ site.cms.path | relative_url }}?page={{ page.url | url_encode }}" target="_blank" rel="nofollow noopener">{{ site.cms.label | default: "Edit" }}</a>
+              </li>
+              {%- endif %}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
