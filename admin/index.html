@@ -442,6 +442,19 @@
             ]
           },
           {
+            id: "research",
+            label: "Research",
+            url: "/research/",
+            description: "Concise research-output overview for prospective trainees.",
+            files: [
+              {
+                path: "_pages/research.md",
+                label: "Research page",
+                help: "Edit the concise overview of Thor, Loki, and cellDancer."
+              }
+            ]
+          },
+          {
             id: "publications",
             label: "Publications",
             url: "/publications/",
@@ -974,6 +987,7 @@
         function inferTargetFromPage() {
           var page = new URLSearchParams(window.location.search).get("page") || "/";
           if (page.indexOf("/publications/") === 0) return { target: "publications" };
+          if (page.indexOf("/research/") === 0) return { target: "research" };
           if (page.indexOf("/cv/") === 0) return { target: "cv" };
           if (page.indexOf("/teaching/") === 0) return { target: "teaching" };
           if (page.indexOf("/repositories/") === 0) return { target: "repositories" };
