@@ -711,6 +711,23 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
+
+      div.bibtex.hidden {
+        figure.highlight,
+        pre,
+        code {
+          color: #111111;
+          background-color: #f1f3f5;
+        }
+
+        figure.highlight {
+          .highlight,
+          span {
+            color: #111111 !important;
+            background-color: transparent !important;
+          }
+        }
+      }
     }
   }
 }
@@ -730,6 +747,23 @@ html[data-theme='dark'] {
 
       * {
         color: var(--global-text-color) !important;
+      }
+    }
+
+    div.bibtex.hidden {
+      figure.highlight,
+      pre,
+      code {
+        color: #111111;
+        background-color: #e5e7eb;
+      }
+
+      figure.highlight {
+        .highlight,
+        span {
+          color: #111111 !important;
+          background-color: transparent !important;
+        }
       }
     }
   }
