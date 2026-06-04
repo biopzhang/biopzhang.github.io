@@ -680,6 +680,17 @@ footer.sticky-bottom {
 .publications ol.bibliography li div.abstract.hidden.open {
   border-color: var(--global-text-color);
 }
+.publications ol.bibliography li div.bibtex.hidden figure.highlight,
+.publications ol.bibliography li div.bibtex.hidden pre,
+.publications ol.bibliography li div.bibtex.hidden code {
+  color: #111111;
+  background-color: #f1f3f5;
+}
+.publications ol.bibliography li div.bibtex.hidden figure.highlight .highlight,
+.publications ol.bibliography li div.bibtex.hidden figure.highlight span {
+  color: #111111 !important;
+  background-color: transparent !important;
+}
 
 html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=legend i],
 html[data-theme=dark] .publications .__dimensions_badge_embed__ [class*=tooltip i],
@@ -699,6 +710,17 @@ html[data-theme=dark] .publications [class*=dimensions i][class*=legend i] *,
 html[data-theme=dark] .publications [class*=dimensions i][class*=tooltip i] *,
 html[data-theme=dark] .publications [class*=dimensions i][class*=popover i] * {
   color: var(--global-text-color) !important;
+}
+html[data-theme=dark] .publications div.bibtex.hidden figure.highlight,
+html[data-theme=dark] .publications div.bibtex.hidden pre,
+html[data-theme=dark] .publications div.bibtex.hidden code {
+  color: #111111;
+  background-color: #e5e7eb;
+}
+html[data-theme=dark] .publications div.bibtex.hidden figure.highlight .highlight,
+html[data-theme=dark] .publications div.bibtex.hidden figure.highlight span {
+  color: #111111 !important;
+  background-color: transparent !important;
 }
 
 figure.highlight {
