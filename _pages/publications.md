@@ -5,7 +5,7 @@ title: Publications
 description: Publications in reversed chronological order.
 display_header: false
 years: [2025, 2024, 2023, 2022, 2021, 2020, 2018, 2017, 2015, 2013]
-nav: true
+nav: false
 nav_order: 1
 ---
 

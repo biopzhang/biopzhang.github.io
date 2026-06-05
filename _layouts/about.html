@@ -11,7 +11,8 @@ layout: default
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
-        <article>
+        <article class="home-page">
+          <section id="about" class="home-section home-section-about">
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
@@ -39,6 +40,37 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
+          </section>
+
+          <section id="research" class="home-section">
+            <h2>Research</h2>
+            {% include research_overview.html %}
+          </section>
+
+          <section id="cv" class="home-section">
+            <h2>CV</h2>
+
+            <div class="cv cv-home">
+              {% for entry in site.data.cv %}
+                <div class="card mt-3 p-3">
+                  <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+                  <div>
+                  {% if entry.type == "list" %}
+                    {% include cv/list.html %}
+                  {% elsif entry.type == "map" %}
+                    {% include cv/map.html %}
+                  {% elsif entry.type == "nested_list" %}
+                    {% include cv/nested_list.html %}
+                  {% elsif entry.type == "time_table" %}
+                    {% include cv/time_table.html %}
+                  {% else %}
+                    {{ entry.contents }}
+                  {% endif %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </section>
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
@@ -60,7 +92,7 @@ layout: default
 
           <!-- Social -->
           {%- if page.social %}
-            <div class="social">
+            <section id="contact" class="home-section social">
               <div class="contact-icons">
                 {% include social.html %}
               </div>
@@ -69,7 +101,7 @@ layout: default
                 {{ site.contact_note }}
               </div>
 
-            </div>
+            </section>
           {%- endif %}
         </article>
 

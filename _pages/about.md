@@ -16,4 +16,4 @@ We study how disease micro-environments shape human health by integrating multim
 
 We develop robust, interpretable machine learning methods to analyze large-scale patient data. Our goal is to identify spatial and molecular patterns that inform prognosis, treatment response, and disease risk. By connecting molecular activity with tissue organization, we aim to discover clinically actionable biomarkers and therapeutic targets that advance precision medicine and improve public health.
 
-We are an interdisciplinary group and welcome trainees from biomedical and quantitative fields.
+We are an interdisciplinary group and welcome trainees from biomedical and quantitative fields. 

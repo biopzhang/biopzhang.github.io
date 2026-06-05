@@ -51,6 +51,16 @@
                   {%- endif -%}
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ '/#research' | relative_url }}">Research</a>
+              </li>
+              <li class="nav-item {% if page.url == '/publications/' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/publications/' | relative_url }}">Publications
+                  {%- if page.url == '/publications/' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
               {% if site.blog_nav_title %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
@@ -61,6 +71,9 @@
                 </a>
               </li>
               {%- endif %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ '/#cv' | relative_url }}">CV</a>
+              </li>
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
@@ -94,11 +107,6 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
-              {%- if site.cms.enabled %}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ site.cms.path | relative_url }}?page={{ page.url | url_encode }}" target="_blank" rel="nofollow noopener">{{ site.cms.label | default: "Edit" }}</a>
-              </li>
-              {%- endif %}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
