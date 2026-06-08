@@ -486,7 +486,7 @@
               {
                 path: "_pages/cv.md",
                 label: "CV page settings",
-                help: "Use this for the CV page title, URL, and linked PDF filename."
+                help: "Use this for the CV page title and URL."
               }
             ]
           },
@@ -499,12 +499,17 @@
             files: []
           },
           {
-            id: "posts",
-            label: "Links / Posts",
+            id: "links",
+            label: "Links",
             url: "/blog/",
-            description: "Resource posts shown under Links.",
-            collection: "_posts",
-            files: []
+            description: "A single long page of useful links.",
+            files: [
+              {
+                path: "blog/index.md",
+                label: "Links page",
+                help: "Edit all link categories in this Markdown file."
+              }
+            ]
           },
           {
             id: "teaching",
@@ -992,7 +997,7 @@
           if (page.indexOf("/teaching/") === 0) return { target: "teaching" };
           if (page.indexOf("/repositories/") === 0) return { target: "repositories" };
           if (page.indexOf("/news/") === 0) return { target: "news", slug: page.split("/").filter(Boolean).pop() };
-          if (page.indexOf("/blog/") === 0) return { target: "posts", slug: page.split("/").filter(Boolean).pop() };
+          if (page.indexOf("/blog/") === 0) return { target: "links" };
           return { target: "home" };
         }
 
